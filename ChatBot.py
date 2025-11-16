@@ -7,10 +7,10 @@ load_dotenv()
 TELEGRAM_TOKEN = os.getenv("7863029490:AAG5gAVciJzB1Uptoh8XEVMHAmdPUyqFFFA")
 VERTEX_API_KEY = os.getenv("AIzaSyCBCm0AMHmMXmICJoev5Vq2fJ2AByBHy4U")
 
-genai.configure(api_key=AIzaSyCBCm0AMHmMXmICJoev5Vq2fJ2AByBHy4U)
+genai.configure(api_key="AIzaSyCBCm0AMHmMXmICJoev5Vq2fJ2AByBHy4U")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-bot = telebot.TeleBot(7863029490:AAG5gAVciJzB1Uptoh8XEVMHAmdPUyqFFFA)
+bot = telebot.TeleBot('7863029490:AAG5gAVciJzB1Uptoh8XEVMHAmdPUyqFFFA')
 
 chat_history = {}
 
